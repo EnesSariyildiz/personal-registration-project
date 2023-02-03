@@ -1,0 +1,11 @@
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\bin\Debug\personal-registration-project.exe.config
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\bin\Debug\personal-registration-project.exe
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\bin\Debug\personal-registration-project.pdb
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal-registration-project.csproj.AssemblyReference.cache
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal-registration-project.csproj.SuggestedBindingRedirects.cache
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal_registration_project.Form1.resources
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal_registration_project.Properties.Resources.resources
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal-registration-project.csproj.GenerateResource.cache
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal-registration-project.csproj.CoreCompileInputs.cache
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal-registration-project.exe
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal-registration-project.pdb
