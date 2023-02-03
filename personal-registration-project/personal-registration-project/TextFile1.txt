@@ -1,0 +1,2 @@
+﻿Sql komutları kullanmak için eklenmesi gereken kütüphane.
+System.Data.SqlClient

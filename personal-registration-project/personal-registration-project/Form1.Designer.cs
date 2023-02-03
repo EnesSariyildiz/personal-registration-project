@@ -40,7 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.CmbSehir = new System.Windows.Forms.ComboBox();
-            this.MskMeslek = new System.Windows.Forms.MaskedTextBox();
+            this.TxtMeslek = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -82,7 +82,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.MskMeslek);
+            this.groupBox1.Controls.Add(this.TxtMeslek);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.CmbSehir);
             this.groupBox1.Controls.Add(this.label5);
@@ -176,12 +176,12 @@
             this.CmbSehir.Size = new System.Drawing.Size(249, 30);
             this.CmbSehir.TabIndex = 4;
             // 
-            // MskMeslek
+            // TxtMeslek
             // 
-            this.MskMeslek.Location = new System.Drawing.Point(118, 345);
-            this.MskMeslek.Name = "MskMeslek";
-            this.MskMeslek.Size = new System.Drawing.Size(249, 28);
-            this.MskMeslek.TabIndex = 8;
+            this.TxtMeslek.Location = new System.Drawing.Point(118, 345);
+            this.TxtMeslek.Name = "TxtMeslek";
+            this.TxtMeslek.Size = new System.Drawing.Size(249, 28);
+            this.TxtMeslek.TabIndex = 8;
             // 
             // label6
             // 
@@ -242,6 +242,7 @@
             this.BtnListele.TabIndex = 0;
             this.BtnListele.Text = "Listele";
             this.BtnListele.UseVisualStyleBackColor = false;
+            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
             // BtnKaydet
             // 
@@ -253,6 +254,7 @@
             this.BtnKaydet.TabIndex = 1;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = false;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // BtnSil
             // 
@@ -323,7 +325,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkKhaki;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.CadetBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.personelidDataGridViewTextBoxColumn,
@@ -429,8 +431,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkKhaki;
-            this.ClientSize = new System.Drawing.Size(957, 656);
+            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.ClientSize = new System.Drawing.Size(957, 702);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -468,7 +470,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.MaskedTextBox MskMeslek;
+        private System.Windows.Forms.MaskedTextBox TxtMeslek;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox CmbSehir;
         private System.Windows.Forms.GroupBox groupBox2;
