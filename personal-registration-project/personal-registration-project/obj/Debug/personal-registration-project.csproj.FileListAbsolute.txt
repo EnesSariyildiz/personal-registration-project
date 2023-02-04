@@ -9,3 +9,4 @@ C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal
 C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal-registration-project.csproj.CoreCompileInputs.cache
 C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal-registration-project.exe
 C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal-registration-project.pdb
+C:\Users\ens_s\Desktop\Software\C# Course\personal-registration-project\personal-registration-project\obj\Debug\personal_registration_project.Frmİstatislik.resources
