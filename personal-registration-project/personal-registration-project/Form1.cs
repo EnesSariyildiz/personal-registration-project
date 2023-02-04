@@ -46,13 +46,14 @@ namespace personal_registration_project
         {
             baglanti.Open();
             //Bağlantı açılıyor.
-            SqlCommand komut = new SqlCommand("insert into Tbl_Personel (PerAd, PerSoyad,PerSehir,PerMaas,PerMeslek) values (@p1,@p2,@p3,@p4,@p5)", baglanti);
+            SqlCommand komut = new SqlCommand("insert into Tbl_Personel (PerAd, PerSoyad,PerSehir,PerMaas,PerMeslek,PerDurum) values (@p1,@p2,@p3,@p4,@p5,@p6)", baglanti);
             //@p = parametrenin p harfi kullanılıyor, isteğe göre farklı değer ataması yapılabilir.
             komut.Parameters.AddWithValue("@p1", TxtAd.Text);
             komut.Parameters.AddWithValue("@p2", TxtSoyad.Text);
             komut.Parameters.AddWithValue("@p3", CmbSehir.Text);
             komut.Parameters.AddWithValue("@p4", MskMaas.Text);
             komut.Parameters.AddWithValue("@p5", TxtMeslek.Text);
+            komut.Parameters.AddWithValue("@p6",label8.Text);
 
 
             komut.ExecuteNonQuery();
@@ -60,6 +61,16 @@ namespace personal_registration_project
             baglanti.Close();
             //Bağlantı kapatılıyor.
             MessageBox.Show("Personel Eklendi!");
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            label8.Text = "False";
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            label8.Text = "True";
         }
     }
 }

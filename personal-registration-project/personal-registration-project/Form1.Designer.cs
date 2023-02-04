@@ -31,35 +31,31 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtId = new System.Windows.Forms.TextBox();
-            this.TxtAd = new System.Windows.Forms.TextBox();
-            this.TxtSoyad = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.CmbSehir = new System.Windows.Forms.ComboBox();
+            this.MskMaas = new System.Windows.Forms.MaskedTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.TxtMeslek = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.CmbSehir = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TxtSoyad = new System.Windows.Forms.TextBox();
+            this.TxtAd = new System.Windows.Forms.TextBox();
+            this.TxtId = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BtnListele = new System.Windows.Forms.Button();
-            this.BtnKaydet = new System.Windows.Forms.Button();
-            this.BtnSil = new System.Windows.Forms.Button();
-            this.BtnGüncelle = new System.Windows.Forms.Button();
-            this.BtnTemizle = new System.Windows.Forms.Button();
-            this.Btnİstatislik = new System.Windows.Forms.Button();
             this.BtnGrafikler = new System.Windows.Forms.Button();
+            this.Btnİstatislik = new System.Windows.Forms.Button();
+            this.BtnTemizle = new System.Windows.Forms.Button();
+            this.BtnGüncelle = new System.Windows.Forms.Button();
+            this.BtnSil = new System.Windows.Forms.Button();
+            this.BtnKaydet = new System.Windows.Forms.Button();
+            this.BtnListele = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.MskMaas = new System.Windows.Forms.MaskedTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.personel_veri_tabaniDataSet = new personal_registration_project.personel_veri_tabaniDataSet();
-            this.tblPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_PersonelTableAdapter = new personal_registration_project.personel_veri_tabaniDataSetTableAdapters.Tbl_PersonelTableAdapter();
             this.personelidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,13 +63,18 @@
             this.perMaasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.perDurumDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.perMeslekDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblPersonelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.personel_veri_tabaniDataSet = new personal_registration_project.personel_veri_tabaniDataSet();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tbl_PersonelTableAdapter = new personal_registration_project.personel_veri_tabaniDataSetTableAdapters.Tbl_PersonelTableAdapter();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.personel_veri_tabaniDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personel_veri_tabaniDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -101,80 +102,47 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personel Kayıt";
             // 
-            // label1
+            // MskMaas
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 22);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Id : ";
+            this.MskMaas.Location = new System.Drawing.Point(118, 257);
+            this.MskMaas.Mask = "0000";
+            this.MskMaas.Name = "MskMaas";
+            this.MskMaas.Size = new System.Drawing.Size(249, 28);
+            this.MskMaas.TabIndex = 5;
+            this.MskMaas.ValidatingType = typeof(int);
             // 
-            // TxtId
+            // label7
             // 
-            this.TxtId.Location = new System.Drawing.Point(118, 48);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.Size = new System.Drawing.Size(249, 28);
-            this.TxtId.TabIndex = 1;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(33, 256);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 22);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Maaş : ";
             // 
-            // TxtAd
+            // radioButton2
             // 
-            this.TxtAd.Location = new System.Drawing.Point(118, 97);
-            this.TxtAd.Name = "TxtAd";
-            this.TxtAd.Size = new System.Drawing.Size(249, 28);
-            this.TxtAd.TabIndex = 2;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(132, 294);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(52, 26);
+            this.radioButton2.TabIndex = 7;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Evli";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // TxtSoyad
+            // radioButton1
             // 
-            this.TxtSoyad.Location = new System.Drawing.Point(118, 147);
-            this.TxtSoyad.Name = "TxtSoyad";
-            this.TxtSoyad.Size = new System.Drawing.Size(249, 28);
-            this.TxtSoyad.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 100);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 22);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Ad : ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 150);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 22);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Soyad : ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 207);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 22);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Şehir : ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 292);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 22);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Durum : ";
-            // 
-            // CmbSehir
-            // 
-            this.CmbSehir.FormattingEnabled = true;
-            this.CmbSehir.Location = new System.Drawing.Point(118, 203);
-            this.CmbSehir.Name = "CmbSehir";
-            this.CmbSehir.Size = new System.Drawing.Size(249, 30);
-            this.CmbSehir.TabIndex = 4;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(283, 294);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(66, 26);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Bekar";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // TxtMeslek
             // 
@@ -192,27 +160,80 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Meslek : ";
             // 
-            // radioButton1
+            // CmbSehir
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(141, 296);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(66, 26);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Bekar";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.CmbSehir.FormattingEnabled = true;
+            this.CmbSehir.Location = new System.Drawing.Point(118, 203);
+            this.CmbSehir.Name = "CmbSehir";
+            this.CmbSehir.Size = new System.Drawing.Size(249, 30);
+            this.CmbSehir.TabIndex = 4;
             // 
-            // radioButton2
+            // label5
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(277, 296);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(52, 26);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Evli";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(33, 292);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 22);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Durum : ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(33, 207);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 22);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Şehir : ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(33, 150);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 22);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Soyad : ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(33, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 22);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Ad : ";
+            // 
+            // TxtSoyad
+            // 
+            this.TxtSoyad.Location = new System.Drawing.Point(118, 147);
+            this.TxtSoyad.Name = "TxtSoyad";
+            this.TxtSoyad.Size = new System.Drawing.Size(249, 28);
+            this.TxtSoyad.TabIndex = 3;
+            // 
+            // TxtAd
+            // 
+            this.TxtAd.Location = new System.Drawing.Point(118, 97);
+            this.TxtAd.Name = "TxtAd";
+            this.TxtAd.Size = new System.Drawing.Size(249, 28);
+            this.TxtAd.TabIndex = 2;
+            // 
+            // TxtId
+            // 
+            this.TxtId.Location = new System.Drawing.Point(118, 48);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.Size = new System.Drawing.Size(249, 28);
+            this.TxtId.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(33, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(33, 22);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Id : ";
             // 
             // groupBox2
             // 
@@ -232,17 +253,60 @@
             this.groupBox2.Text = "İşlemler";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // BtnListele
+            // BtnGrafikler
             // 
-            this.BtnListele.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnListele.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnListele.Location = new System.Drawing.Point(32, 48);
-            this.BtnListele.Name = "BtnListele";
-            this.BtnListele.Size = new System.Drawing.Size(160, 28);
-            this.BtnListele.TabIndex = 0;
-            this.BtnListele.Text = "Listele";
-            this.BtnListele.UseVisualStyleBackColor = false;
-            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
+            this.BtnGrafikler.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnGrafikler.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnGrafikler.Location = new System.Drawing.Point(32, 342);
+            this.BtnGrafikler.Name = "BtnGrafikler";
+            this.BtnGrafikler.Size = new System.Drawing.Size(160, 28);
+            this.BtnGrafikler.TabIndex = 6;
+            this.BtnGrafikler.Text = "Grafikler";
+            this.BtnGrafikler.UseVisualStyleBackColor = false;
+            // 
+            // Btnİstatislik
+            // 
+            this.Btnİstatislik.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Btnİstatislik.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Btnİstatislik.Location = new System.Drawing.Point(32, 292);
+            this.Btnİstatislik.Name = "Btnİstatislik";
+            this.Btnİstatislik.Size = new System.Drawing.Size(160, 28);
+            this.Btnİstatislik.TabIndex = 5;
+            this.Btnİstatislik.Text = "İstatislik";
+            this.Btnİstatislik.UseVisualStyleBackColor = false;
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnTemizle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnTemizle.Location = new System.Drawing.Point(32, 242);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(160, 28);
+            this.BtnTemizle.TabIndex = 4;
+            this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.UseVisualStyleBackColor = false;
+            // 
+            // BtnGüncelle
+            // 
+            this.BtnGüncelle.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnGüncelle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnGüncelle.Location = new System.Drawing.Point(32, 195);
+            this.BtnGüncelle.Name = "BtnGüncelle";
+            this.BtnGüncelle.Size = new System.Drawing.Size(160, 28);
+            this.BtnGüncelle.TabIndex = 3;
+            this.BtnGüncelle.Text = "Güncelle";
+            this.BtnGüncelle.UseVisualStyleBackColor = false;
+            // 
+            // BtnSil
+            // 
+            this.BtnSil.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnSil.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnSil.Location = new System.Drawing.Point(32, 144);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(160, 28);
+            this.BtnSil.TabIndex = 2;
+            this.BtnSil.Text = "Sil";
+            this.BtnSil.UseVisualStyleBackColor = false;
             // 
             // BtnKaydet
             // 
@@ -256,60 +320,17 @@
             this.BtnKaydet.UseVisualStyleBackColor = false;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
-            // BtnSil
+            // BtnListele
             // 
-            this.BtnSil.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnSil.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnSil.Location = new System.Drawing.Point(32, 144);
-            this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(160, 28);
-            this.BtnSil.TabIndex = 2;
-            this.BtnSil.Text = "Sil";
-            this.BtnSil.UseVisualStyleBackColor = false;
-            // 
-            // BtnGüncelle
-            // 
-            this.BtnGüncelle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnGüncelle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnGüncelle.Location = new System.Drawing.Point(32, 195);
-            this.BtnGüncelle.Name = "BtnGüncelle";
-            this.BtnGüncelle.Size = new System.Drawing.Size(160, 28);
-            this.BtnGüncelle.TabIndex = 3;
-            this.BtnGüncelle.Text = "Güncelle";
-            this.BtnGüncelle.UseVisualStyleBackColor = false;
-            // 
-            // BtnTemizle
-            // 
-            this.BtnTemizle.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnTemizle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnTemizle.Location = new System.Drawing.Point(32, 242);
-            this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(160, 28);
-            this.BtnTemizle.TabIndex = 4;
-            this.BtnTemizle.Text = "Temizle";
-            this.BtnTemizle.UseVisualStyleBackColor = false;
-            // 
-            // Btnİstatislik
-            // 
-            this.Btnİstatislik.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Btnİstatislik.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Btnİstatislik.Location = new System.Drawing.Point(32, 292);
-            this.Btnİstatislik.Name = "Btnİstatislik";
-            this.Btnİstatislik.Size = new System.Drawing.Size(160, 28);
-            this.Btnİstatislik.TabIndex = 5;
-            this.Btnİstatislik.Text = "İstatislik";
-            this.Btnİstatislik.UseVisualStyleBackColor = false;
-            // 
-            // BtnGrafikler
-            // 
-            this.BtnGrafikler.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BtnGrafikler.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnGrafikler.Location = new System.Drawing.Point(32, 342);
-            this.BtnGrafikler.Name = "BtnGrafikler";
-            this.BtnGrafikler.Size = new System.Drawing.Size(160, 28);
-            this.BtnGrafikler.TabIndex = 6;
-            this.BtnGrafikler.Text = "Grafikler";
-            this.BtnGrafikler.UseVisualStyleBackColor = false;
+            this.BtnListele.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BtnListele.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnListele.Location = new System.Drawing.Point(32, 48);
+            this.BtnListele.Name = "BtnListele";
+            this.BtnListele.Size = new System.Drawing.Size(160, 28);
+            this.BtnListele.TabIndex = 0;
+            this.BtnListele.Text = "Listele";
+            this.BtnListele.UseVisualStyleBackColor = false;
+            this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
             // 
             // groupBox3
             // 
@@ -341,48 +362,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(927, 167);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(33, 256);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 22);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Maaş : ";
-            // 
-            // MskMaas
-            // 
-            this.MskMaas.Location = new System.Drawing.Point(118, 257);
-            this.MskMaas.Mask = "0000";
-            this.MskMaas.Name = "MskMaas";
-            this.MskMaas.Size = new System.Drawing.Size(249, 28);
-            this.MskMaas.TabIndex = 5;
-            this.MskMaas.ValidatingType = typeof(int);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(698, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 209);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // personel_veri_tabaniDataSet
-            // 
-            this.personel_veri_tabaniDataSet.DataSetName = "personel_veri_tabaniDataSet";
-            this.personel_veri_tabaniDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblPersonelBindingSource
-            // 
-            this.tblPersonelBindingSource.DataMember = "Tbl_Personel";
-            this.tblPersonelBindingSource.DataSource = this.personel_veri_tabaniDataSet;
-            // 
-            // tbl_PersonelTableAdapter
-            // 
-            this.tbl_PersonelTableAdapter.ClearBeforeFill = true;
             // 
             // personelidDataGridViewTextBoxColumn
             // 
@@ -427,12 +406,46 @@
             this.perMeslekDataGridViewTextBoxColumn.HeaderText = "PerMeslek";
             this.perMeslekDataGridViewTextBoxColumn.Name = "perMeslekDataGridViewTextBoxColumn";
             // 
+            // tblPersonelBindingSource
+            // 
+            this.tblPersonelBindingSource.DataMember = "Tbl_Personel";
+            this.tblPersonelBindingSource.DataSource = this.personel_veri_tabaniDataSet;
+            // 
+            // personel_veri_tabaniDataSet
+            // 
+            this.personel_veri_tabaniDataSet.DataSetName = "personel_veri_tabaniDataSet";
+            this.personel_veri_tabaniDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(698, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(247, 209);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tbl_PersonelTableAdapter
+            // 
+            this.tbl_PersonelTableAdapter.ClearBeforeFill = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(736, 276);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 22);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "label8";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(957, 702);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -449,10 +462,11 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.personel_veri_tabaniDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblPersonelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personel_veri_tabaniDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -495,6 +509,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn perMaasDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn perDurumDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn perMeslekDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label8;
     }
 }
 
