@@ -285,6 +285,7 @@
             this.BtnTemizle.TabIndex = 4;
             this.BtnTemizle.Text = "Temizle";
             this.BtnTemizle.UseVisualStyleBackColor = false;
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // BtnGüncelle
             // 
@@ -362,6 +363,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(927, 167);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
             // 
             // personelidDataGridViewTextBoxColumn
             // 
@@ -438,6 +440,8 @@
             this.label8.Size = new System.Drawing.Size(50, 22);
             this.label8.TabIndex = 4;
             this.label8.Text = "label8";
+            this.label8.Visible = false;
+            this.label8.TextChanged += new System.EventHandler(this.label8_TextChanged);
             // 
             // Form1
             // 

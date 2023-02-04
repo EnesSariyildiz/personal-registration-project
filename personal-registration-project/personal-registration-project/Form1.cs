@@ -27,9 +27,19 @@ namespace personal_registration_project
         {
 
         }
-
         SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-T54ECK5;Initial Catalog=personel_veri_tabani;Integrated Security=True");
-
+        void Temizle()
+        {
+            TxtId.Text = "";
+            TxtAd.Text = "";
+            TxtSoyad.Text = "";
+            TxtMeslek.Text = "";
+            MskMaas.Text = "";
+            CmbSehir.Text = "";
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            TxtAd.Focus();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -53,7 +63,7 @@ namespace personal_registration_project
             komut.Parameters.AddWithValue("@p3", CmbSehir.Text);
             komut.Parameters.AddWithValue("@p4", MskMaas.Text);
             komut.Parameters.AddWithValue("@p5", TxtMeslek.Text);
-            komut.Parameters.AddWithValue("@p6",label8.Text);
+            komut.Parameters.AddWithValue("@p6", label8.Text);
 
 
             komut.ExecuteNonQuery();
@@ -65,12 +75,56 @@ namespace personal_registration_project
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            label8.Text = "False";
+            //label8.Text = "False";
+            if (label8.Text == "True")
+            {
+                radioButton1.Checked = true;
+            }
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            label8.Text = "True";
+            //label8.Text = "True";
+            if (label8.Text == "True")
+            {
+                radioButton2.Checked = false;
+            }
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            Temizle();
+        }
+
+        private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            //Çift tıklanan grid'in id'sini ekrana yazdıran blok.
+            int secilen = dataGridView1.SelectedCells[0].RowIndex;
+            TxtId.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            TxtAd.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+            TxtSoyad.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
+            CmbSehir.Text = dataGridView1.Rows[secilen].Cells[3].Value.ToString();
+            MskMaas.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
+
+            label8.Text = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
+            TxtMeslek.Text = dataGridView1.Rows[secilen].Cells[6].Value.ToString();
+
+
+
+        }
+
+        private void label8_TextChanged(object sender, EventArgs e)
+        {
+            if (label8.Text == "True")
+            {
+                radioButton1.Checked = true;
+            }
+            else if (label8.Text == "False")
+            {
+                radioButton2.Checked = true;
+            }
+            
         }
     }
 }
